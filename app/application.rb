@@ -20,6 +20,7 @@ class Application
 
     elsif req.path.match(/add/)
       search_term = req.params["q"]
+      binding.pry
       if @@items.include?(search_term)
         @@cart << search_term
         resp.write "added #{search_term}"

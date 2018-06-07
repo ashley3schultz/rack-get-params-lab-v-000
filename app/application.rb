@@ -31,7 +31,7 @@ class Application
     if @@items.include?(search_term)
       return "#{search_term} is one of our items"
     if @@cart.include?(search_term)
-        return "#{search_term} is one of our items"
+        return "#{search_term} is in your cart"
     else
       return "Couldn't find #{search_term}"
     end

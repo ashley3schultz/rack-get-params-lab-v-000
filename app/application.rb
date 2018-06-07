@@ -35,9 +35,9 @@ class Application
 
   def handle_search(search_term)
     if @@items.include?(search_term)
-      return "#{search_term} is one of our items"
+      #return "#{search_term} is one of our items"
       @@cart << search_term
-      resp.write "added #{search_term}"
+      return "added #{search_term}"
     else
       return "Couldn't find #{search_term}"
     end
